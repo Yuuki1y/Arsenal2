@@ -1,0 +1,2313 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Yes = Instance.new("ScreenGui")
+local Bar = Instance.new("Frame")
+local main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local menu = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local CombatFold = Instance.new("Folder")
+local Scripts = Instance.new("Folder")
+local UIElements = Instance.new("Folder")
+local Combat = Instance.new("TextButton")
+local Checks = Instance.new("Folder")
+local AimBot = Instance.new("Folder")
+local Visuals = Instance.new("Folder")
+local Visuals_2 = Instance.new("TextButton")
+local MainFunctions = Instance.new("Folder")
+local Shadow = Instance.new("ImageLabel")
+local Slider = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Button = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local FPS = Instance.new("TextLabel")
+local Invite_Friend = Instance.new("ImageButton")
+local invitefriends = Instance.new("TextLabel")
+local VisualsFrame = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local ESP = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Chams = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local Creditz = Instance.new("TextLabel")
+local button3 = Instance.new("TextButton")
+local gameName = Instance.new("TextLabel")
+local plrName = Instance.new("TextLabel")
+local CombatFrame = Instance.new("Frame")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local KA = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local KnifeAll = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local KillAura = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local TextLabel_9 = Instance.new("TextLabel")
+local Check = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local LoopKillAll = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local TextLabel_10 = Instance.new("TextLabel")
+local Check_2 = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local SilentAim = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_11 = Instance.new("TextLabel")
+local Check_3 = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local GunMods = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local TextLabel_12 = Instance.new("TextLabel")
+local NoRecoil = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local TextLabel_13 = Instance.new("TextLabel")
+local Check_4 = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local Automatic = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local TextLabel_14 = Instance.new("TextLabel")
+local Check_5 = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local LoadFold = Instance.new("Folder")
+local Credz = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local Shadow_2 = Instance.new("ImageLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+local Updates = Instance.new("Frame")
+local UICorner_24 = Instance.new("UICorner")
+local Shadow_3 = Instance.new("ImageLabel")
+local TextLabel_17 = Instance.new("TextLabel")
+local ScrollingFrame_3 = Instance.new("ScrollingFrame")
+local TextLabel_18 = Instance.new("TextLabel")
+local intro = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local Shadow_4 = Instance.new("ImageLabel")
+local TextLabel_19 = Instance.new("TextLabel")
+local TextLabel_20 = Instance.new("TextLabel")
+local Load = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+
+--Properties:
+
+Yes.Name = "Yes"
+Yes.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Bar.Name = "Bar"
+Bar.Parent = Yes
+Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar.BackgroundTransparency = 1.000
+Bar.Position = UDim2.new(0.0480446927, 0, 0.177272722, 0)
+Bar.Size = UDim2.new(0, 823, 0, 34)
+Bar.Visible = false
+
+main.Name = "main"
+main.Parent = Bar
+main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+main.Position = UDim2.new(0.294812202, 0, -0.293748409, 0)
+main.Size = UDim2.new(0, 823, 0, 514)
+
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = main
+
+menu.Name = "menu"
+menu.Parent = main
+menu.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+menu.Size = UDim2.new(0, 181, 0, 514)
+
+UICorner_2.CornerRadius = UDim.new(0, 10)
+UICorner_2.Parent = menu
+
+title.Name = "title"
+title.Parent = menu
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.0331491716, 0, 0.0136186769, 0)
+title.Size = UDim2.new(0, 169, 0, 45)
+title.Font = Enum.Font.GothamSemibold
+title.Text = "Yuuki Hub V1"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+CombatFold.Name = "CombatFold"
+CombatFold.Parent = menu
+
+Scripts.Name = "Scripts"
+Scripts.Parent = CombatFold
+
+UIElements.Name = "UIElements"
+UIElements.Parent = CombatFold
+
+Combat.Name = "Combat"
+Combat.Parent = CombatFold
+Combat.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Combat.BorderSizePixel = 0
+Combat.Position = UDim2.new(0.0331491716, 0, 0.18871595, 0)
+Combat.Size = UDim2.new(0, 169, 0, 47)
+Combat.Font = Enum.Font.GothamSemibold
+Combat.Text = "Combat"
+Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Combat.TextScaled = true
+Combat.TextSize = 14.000
+Combat.TextWrapped = true
+
+Checks.Name = "Checks"
+Checks.Parent = CombatFold
+
+AimBot.Name = "AimBot"
+AimBot.Parent = Checks
+
+Visuals.Name = "Visuals"
+Visuals.Parent = Checks
+
+Visuals_2.Name = "Visuals"
+Visuals_2.Parent = menu
+Visuals_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Visuals_2.BorderSizePixel = 0
+Visuals_2.Position = UDim2.new(0.0331491716, 0, 0.315175086, 0)
+Visuals_2.Size = UDim2.new(0, 169, 0, 47)
+Visuals_2.Font = Enum.Font.GothamSemibold
+Visuals_2.Text = "Visuals"
+Visuals_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Visuals_2.TextScaled = true
+Visuals_2.TextSize = 14.000
+Visuals_2.TextWrapped = true
+
+MainFunctions.Name = "Main Functions"
+MainFunctions.Parent = menu
+
+Shadow.Name = "Shadow"
+Shadow.Parent = menu
+Shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow.BackgroundTransparency = 1.000
+Shadow.Position = UDim2.new(-0.0552484505, 0, -0.0155642023, 0)
+Shadow.Size = UDim2.new(4.50866175, 24, 0.983256876, 24)
+Shadow.ZIndex = -999999999
+Shadow.Image = "rbxassetid://405124116"
+Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow.ScaleType = Enum.ScaleType.Slice
+Shadow.SliceCenter = Rect.new(12, 12, 115, 115)
+
+Slider.Name = "Slider"
+Slider.Parent = menu
+Slider.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Slider.Position = UDim2.new(1.1219027, 0, 0.138132289, 0)
+Slider.Size = UDim2.new(0, 445, 0, 16)
+Slider.Visible = false
+
+UICorner_3.Parent = Slider
+
+Button.Name = "Button"
+Button.Parent = Slider
+Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button.Position = UDim2.new(-0.00196629204, 0, -0.416999996, 0)
+Button.Size = UDim2.new(0, 17, 0, 29)
+Button.Font = Enum.Font.SourceSans
+Button.Text = ""
+Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(999, 999)
+UICorner_4.Parent = Button
+
+TextLabel.Parent = Slider
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.21348314, 0, -2.25, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 29)
+TextLabel.Visible = false
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "how swag r u B)"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+FPS.Name = "FPS"
+FPS.Parent = menu
+FPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPS.BackgroundTransparency = 1.000
+FPS.Position = UDim2.new(3.91712713, 0, 0.910505831, 0)
+FPS.Size = UDim2.new(0, 108, 0, 40)
+FPS.Font = Enum.Font.GothamSemibold
+FPS.Text = "FPS: 0"
+FPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+FPS.TextScaled = true
+FPS.TextSize = 14.000
+FPS.TextWrapped = true
+
+Invite_Friend.Name = "Invite_Friend"
+Invite_Friend.Parent = menu
+Invite_Friend.BackgroundTransparency = 1.000
+Invite_Friend.BorderSizePixel = 0
+Invite_Friend.Position = UDim2.new(3.5853591, 0, 0.912451327, 0)
+Invite_Friend.Size = UDim2.new(0, 45, 0, 45)
+Invite_Friend.ZIndex = 2
+Invite_Friend.Image = "rbxassetid://3926305904"
+Invite_Friend.ImageRectOffset = Vector2.new(84, 844)
+Invite_Friend.ImageRectSize = Vector2.new(36, 36)
+
+invitefriends.Name = "invitefriends"
+invitefriends.Parent = Invite_Friend
+invitefriends.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+invitefriends.BackgroundTransparency = 1.000
+invitefriends.Position = UDim2.new(-4.237607, 0, -0.0146999788, 0)
+invitefriends.Size = UDim2.new(0, 183, 0, 45)
+invitefriends.Font = Enum.Font.GothamSemibold
+invitefriends.Text = "Invite Friends"
+invitefriends.TextColor3 = Color3.fromRGB(255, 255, 255)
+invitefriends.TextScaled = true
+invitefriends.TextSize = 14.000
+invitefriends.TextWrapped = true
+
+VisualsFrame.Name = "VisualsFrame"
+VisualsFrame.Parent = menu
+VisualsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisualsFrame.BackgroundTransparency = 1.000
+VisualsFrame.Position = UDim2.new(1, 0, 0, 0)
+VisualsFrame.Size = UDim2.new(3.51381111, 0, 0.998713017, 0)
+VisualsFrame.Visible = false
+VisualsFrame.ZIndex = 5
+
+ScrollingFrame.Parent = VisualsFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.Position = UDim2.new(4.7983626e-08, 0, 0.0136362268, 0)
+ScrollingFrame.Size = UDim2.new(0, 636, 0, 461)
+
+ESP.Name = "ESP"
+ESP.Parent = ScrollingFrame
+ESP.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+ESP.Position = UDim2.new(0.0361635238, 0, 0.0100119486, 0)
+ESP.Size = UDim2.new(0.920000017, 0, 0.0430850536, 0)
+ESP.Font = Enum.Font.Arial
+ESP.Text = ""
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextSize = 25.000
+ESP.TextWrapped = true
+ESP.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_5.CornerRadius = UDim.new(0, 10)
+UICorner_5.Parent = ESP
+
+TextLabel_2.Parent = ESP
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.371807218, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0.25472486, 0, 1, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "ESP"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Chams.Name = "Chams"
+Chams.Parent = ScrollingFrame
+Chams.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Chams.Position = UDim2.new(0.0361635238, 0, 0.0655308738, 0)
+Chams.Size = UDim2.new(0.920000017, 0, 0.0430850536, 0)
+Chams.Font = Enum.Font.Arial
+Chams.Text = ""
+Chams.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chams.TextSize = 25.000
+Chams.TextWrapped = true
+Chams.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_6.CornerRadius = UDim.new(0, 10)
+UICorner_6.Parent = Chams
+
+TextLabel_3.Parent = Chams
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.013462116, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0.139662772, 0, 1, 0)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Chams"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = Chams
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+TextLabel_4.Position = UDim2.new(0.835640609, 0, 0.0873282403, 0)
+TextLabel_4.Size = UDim2.new(0.122648023, 0, 0.799637616, 0)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "9"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 15)
+UICorner_7.Parent = TextLabel_4
+
+Creditz.Name = "Creditz"
+Creditz.Parent = menu
+Creditz.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Creditz.BackgroundTransparency = 1.000
+Creditz.Position = UDim2.new(1, 0, 0.926070035, 0)
+Creditz.Size = UDim2.new(0, 277, 0, 29)
+Creditz.Font = Enum.Font.GothamSemibold
+Creditz.Text = "Creds: Yuuki#0299(GUI), and Yuuki#0299(GUI & Scripting)"
+Creditz.TextColor3 = Color3.fromRGB(255, 255, 255)
+Creditz.TextScaled = true
+Creditz.TextSize = 14.000
+Creditz.TextWrapped = true
+
+button3.Name = "button3"
+button3.Parent = menu
+button3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+button3.BorderSizePixel = 0
+button3.Position = UDim2.new(0.0276243091, 0, 0.45330739, 0)
+button3.Size = UDim2.new(0, 169, 0, 47)
+button3.Font = Enum.Font.GothamSemibold
+button3.Text = "button"
+button3.TextColor3 = Color3.fromRGB(255, 255, 255)
+button3.TextScaled = true
+button3.TextSize = 14.000
+button3.TextWrapped = true
+
+gameName.Name = "gameName"
+gameName.Parent = menu
+gameName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gameName.BackgroundTransparency = 1.000
+gameName.Position = UDim2.new(0.0331491716, 0, 0.101167314, 0)
+gameName.Size = UDim2.new(0, 169, 0, 29)
+gameName.Font = Enum.Font.GothamSemibold
+gameName.Text = "Arsenal"
+gameName.TextColor3 = Color3.fromRGB(121, 121, 121)
+gameName.TextScaled = true
+gameName.TextSize = 14.000
+gameName.TextWrapped = true
+
+plrName.Name = "plrName"
+plrName.Parent = menu
+plrName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+plrName.BackgroundTransparency = 1.000
+plrName.Position = UDim2.new(0.0331491716, 0, 0.926070035, 0)
+plrName.Size = UDim2.new(0, 169, 0, 29)
+plrName.Font = Enum.Font.GothamSemibold
+plrName.Text = "plrName"
+plrName.TextColor3 = Color3.fromRGB(121, 121, 121)
+plrName.TextScaled = true
+plrName.TextSize = 14.000
+plrName.TextWrapped = true
+
+CombatFrame.Name = "CombatFrame"
+CombatFrame.Parent = menu
+CombatFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CombatFrame.BackgroundTransparency = 1.000
+CombatFrame.Position = UDim2.new(1, 0, 0, 0)
+CombatFrame.Size = UDim2.new(3.51381111, 0, 0.998713017, 0)
+CombatFrame.ZIndex = 5
+
+ScrollingFrame_2.Parent = CombatFrame
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_2.BackgroundTransparency = 1.000
+ScrollingFrame_2.Position = UDim2.new(4.7983626e-08, 0, 0.0136362268, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 636, 0, 461)
+
+KA.Name = "KA"
+KA.Parent = ScrollingFrame_2
+KA.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+KA.Position = UDim2.new(0.0361635238, 0, 0.0100119486, 0)
+KA.Size = UDim2.new(0.920000017, 0, 0.0430850536, 0)
+KA.Font = Enum.Font.Arial
+KA.Text = ""
+KA.TextColor3 = Color3.fromRGB(255, 255, 255)
+KA.TextSize = 25.000
+KA.TextWrapped = true
+KA.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_8.CornerRadius = UDim.new(0, 10)
+UICorner_8.Parent = KA
+
+TextLabel_5.Parent = KA
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.013462116, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0.139662772, 0, 1, 0)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Kill All"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = KA
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+TextLabel_6.Position = UDim2.new(0.835640609, 0, 0.0873282403, 0)
+TextLabel_6.Size = UDim2.new(0.122648023, 0, 0.799637616, 0)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "E"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 15)
+UICorner_9.Parent = TextLabel_6
+
+KnifeAll.Name = "Knife All"
+KnifeAll.Parent = ScrollingFrame_2
+KnifeAll.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+KnifeAll.Position = UDim2.new(0.0361635238, 0, 0.0616348088, 0)
+KnifeAll.Size = UDim2.new(0.920000017, 0, 0.0430850536, 0)
+KnifeAll.Font = Enum.Font.Arial
+KnifeAll.Text = ""
+KnifeAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+KnifeAll.TextSize = 25.000
+KnifeAll.TextWrapped = true
+KnifeAll.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_10.CornerRadius = UDim.new(0, 10)
+UICorner_10.Parent = KnifeAll
+
+TextLabel_7.Parent = KnifeAll
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.013462116, 0, 0, 0)
+TextLabel_7.Size = UDim2.new(0.139662772, 0, 1, 0)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Knife Kill"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = KnifeAll
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+TextLabel_8.Position = UDim2.new(0.835640609, 0, 0.0873282403, 0)
+TextLabel_8.Size = UDim2.new(0.122648023, 0, 0.799637616, 0)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "T"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0, 15)
+UICorner_11.Parent = TextLabel_8
+
+KillAura.Name = "KillAura"
+KillAura.Parent = ScrollingFrame_2
+KillAura.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+KillAura.Position = UDim2.new(0.0361635238, 0, 0.11617972, 0)
+KillAura.Size = UDim2.new(0.920000017, 0, 0.0430850536, 0)
+KillAura.Font = Enum.Font.Arial
+KillAura.Text = ""
+KillAura.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillAura.TextSize = 25.000
+KillAura.TextWrapped = true
+KillAura.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_12.CornerRadius = UDim.new(0, 10)
+UICorner_12.Parent = KillAura
+
+TextLabel_9.Parent = KillAura
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.013462116, 0, 0, 0)
+TextLabel_9.Size = UDim2.new(0.139662772, 0, 1, 0)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "Kill Aura"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+Check.Name = "Check"
+Check.Parent = KillAura
+Check.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Check.Position = UDim2.new(0.864000022, 0, 0.0869999975, 0)
+Check.Size = UDim2.new(0.064000003, 0, 0.800000012, 0)
+Check.Font = Enum.Font.SourceSans
+Check.Text = ""
+Check.TextColor3 = Color3.fromRGB(0, 0, 0)
+Check.TextSize = 14.000
+
+UICorner_13.CornerRadius = UDim.new(0, 10)
+UICorner_13.Parent = Check
+
+LoopKillAll.Name = "LoopKillAll"
+LoopKillAll.Parent = ScrollingFrame_2
+LoopKillAll.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+LoopKillAll.Position = UDim2.new(0.0361635238, 0, 0.176568717, 0)
+LoopKillAll.Size = UDim2.new(0.920000017, 0, 0.0430850536, 0)
+LoopKillAll.Font = Enum.Font.Arial
+LoopKillAll.Text = ""
+LoopKillAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoopKillAll.TextSize = 25.000
+LoopKillAll.TextWrapped = true
+LoopKillAll.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_14.CornerRadius = UDim.new(0, 10)
+UICorner_14.Parent = LoopKillAll
+
+TextLabel_10.Parent = LoopKillAll
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.013462116, 0, 0, 0)
+TextLabel_10.Size = UDim2.new(0.195019275, 0, 1, 0)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "Loop Kill All"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+Check_2.Name = "Check"
+Check_2.Parent = LoopKillAll
+Check_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Check_2.Position = UDim2.new(0.864000022, 0, 0.0869999975, 0)
+Check_2.Size = UDim2.new(0.064000003, 0, 0.800000012, 0)
+Check_2.Font = Enum.Font.SourceSans
+Check_2.Text = ""
+Check_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Check_2.TextSize = 14.000
+
+UICorner_15.CornerRadius = UDim.new(0, 10)
+UICorner_15.Parent = Check_2
+
+SilentAim.Name = "SilentAim"
+SilentAim.Parent = ScrollingFrame_2
+SilentAim.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+SilentAim.Position = UDim2.new(0.0361635238, 0, 0.2350097, 0)
+SilentAim.Size = UDim2.new(0.920000017, 0, 0.0430850536, 0)
+SilentAim.Font = Enum.Font.Arial
+SilentAim.Text = ""
+SilentAim.TextColor3 = Color3.fromRGB(255, 255, 255)
+SilentAim.TextSize = 25.000
+SilentAim.TextWrapped = true
+SilentAim.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_16.CornerRadius = UDim.new(0, 10)
+UICorner_16.Parent = SilentAim
+
+TextLabel_11.Parent = SilentAim
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.013462116, 0, 0, 0)
+TextLabel_11.Size = UDim2.new(0.195019275, 0, 1, 0)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "Silent Aim"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+Check_3.Name = "Check"
+Check_3.Parent = SilentAim
+Check_3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Check_3.Position = UDim2.new(0.864000022, 0, 0.0869999975, 0)
+Check_3.Size = UDim2.new(0.064000003, 0, 0.800000012, 0)
+Check_3.Font = Enum.Font.SourceSans
+Check_3.Text = ""
+Check_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Check_3.TextSize = 14.000
+
+UICorner_17.CornerRadius = UDim.new(0, 10)
+UICorner_17.Parent = Check_3
+
+GunMods.Name = "GunMods"
+GunMods.Parent = ScrollingFrame_2
+GunMods.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+GunMods.Position = UDim2.new(0.0361635238, 0, 0.293450654, 0)
+GunMods.Size = UDim2.new(0.920000017, 0, 0.0430850536, 0)
+GunMods.Font = Enum.Font.Arial
+GunMods.Text = ""
+GunMods.TextColor3 = Color3.fromRGB(255, 255, 255)
+GunMods.TextSize = 25.000
+GunMods.TextWrapped = true
+GunMods.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_18.CornerRadius = UDim.new(0, 10)
+UICorner_18.Parent = GunMods
+
+TextLabel_12.Parent = GunMods
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0.322223008, 0, -0.0226068236, 0)
+TextLabel_12.Size = UDim2.new(0.352829367, 0, 1, 0)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "Gun Mods"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+NoRecoil.Name = "NoRecoil"
+NoRecoil.Parent = ScrollingFrame_2
+NoRecoil.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+NoRecoil.Position = UDim2.new(0.034591198, 0, 0.350917637, 0)
+NoRecoil.Size = UDim2.new(0.920000017, 0, 0.0430850536, 0)
+NoRecoil.Font = Enum.Font.Arial
+NoRecoil.Text = ""
+NoRecoil.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoRecoil.TextSize = 25.000
+NoRecoil.TextWrapped = true
+NoRecoil.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_19.CornerRadius = UDim.new(0, 10)
+UICorner_19.Parent = NoRecoil
+
+TextLabel_13.Parent = NoRecoil
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(0.013462116, 0, 0, 0)
+TextLabel_13.Size = UDim2.new(0.195019275, 0, 1, 0)
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = "No Recoil"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+
+Check_4.Name = "Check"
+Check_4.Parent = NoRecoil
+Check_4.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Check_4.Position = UDim2.new(0.864000022, 0, 0.0869999975, 0)
+Check_4.Size = UDim2.new(0.064000003, 0, 0.800000012, 0)
+Check_4.Font = Enum.Font.SourceSans
+Check_4.Text = ""
+Check_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Check_4.TextSize = 14.000
+
+UICorner_20.CornerRadius = UDim.new(0, 10)
+UICorner_20.Parent = Check_4
+
+Automatic.Name = "Automatic"
+Automatic.Parent = ScrollingFrame_2
+Automatic.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Automatic.Position = UDim2.new(0.0361635238, 0, 0.406436563, 0)
+Automatic.Size = UDim2.new(0.920000017, 0, 0.0430850536, 0)
+Automatic.Font = Enum.Font.Arial
+Automatic.Text = ""
+Automatic.TextColor3 = Color3.fromRGB(255, 255, 255)
+Automatic.TextSize = 25.000
+Automatic.TextWrapped = true
+Automatic.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_21.CornerRadius = UDim.new(0, 10)
+UICorner_21.Parent = Automatic
+
+TextLabel_14.Parent = Automatic
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Position = UDim2.new(0.013462116, 0, 0, 0)
+TextLabel_14.Size = UDim2.new(0.195019275, 0, 1, 0)
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "Automatic"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+
+Check_5.Name = "Check"
+Check_5.Parent = Automatic
+Check_5.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Check_5.Position = UDim2.new(0.864000022, 0, 0.0869999975, 0)
+Check_5.Size = UDim2.new(0.064000003, 0, 0.800000012, 0)
+Check_5.Font = Enum.Font.SourceSans
+Check_5.Text = ""
+Check_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Check_5.TextSize = 14.000
+
+UICorner_22.CornerRadius = UDim.new(0, 10)
+UICorner_22.Parent = Check_5
+
+LoadFold.Name = "LoadFold"
+LoadFold.Parent = Yes
+
+Credz.Name = "Credz"
+Credz.Parent = LoadFold
+Credz.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Credz.Position = UDim2.new(0.714367211, 0, 0.326822907, 0)
+Credz.Size = UDim2.new(0.165804252, 0, 0.342568129, 0)
+
+UICorner_23.CornerRadius = UDim.new(0, 15)
+UICorner_23.Parent = Credz
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = Credz
+Shadow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow_2.BackgroundTransparency = 1.000
+Shadow_2.Position = UDim2.new(-0.0206376575, 0, -5.79978519e-08, 0)
+Shadow_2.Size = UDim2.new(0.965028524, 24, 0.908777356, 24)
+Shadow_2.ZIndex = -999999999
+Shadow_2.Image = "rbxassetid://405124116"
+Shadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow_2.ScaleType = Enum.ScaleType.Slice
+Shadow_2.SliceCenter = Rect.new(12, 12, 115, 115)
+
+TextLabel_15.Parent = Credz
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Position = UDim2.new(0.013245645, 0, 0.0312508196, 0)
+TextLabel_15.Size = UDim2.new(1.00000012, 0, 0.125785992, 0)
+TextLabel_15.Font = Enum.Font.SourceSans
+TextLabel_15.Text = "<u>Creditz</u>"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
+
+TextLabel_16.Parent = Credz
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Position = UDim2.new(0.0615181811, 0, 0.103468806, 0)
+TextLabel_16.Size = UDim2.new(0.905381382, 0, 0.845870256, 0)
+TextLabel_16.Font = Enum.Font.SourceSans
+TextLabel_16.Text = "Yuuki#0299(GUI), and Yuuki#0299(GUI & Scripting)"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
+
+Updates.Name = "Updates"
+Updates.Parent = LoadFold
+Updates.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Updates.Position = UDim2.new(0.112610281, 0, 0.328125, 0)
+Updates.Size = UDim2.new(0.165804252, 0, 0.342568129, 0)
+
+UICorner_24.CornerRadius = UDim.new(0, 15)
+UICorner_24.Parent = Updates
+
+Shadow_3.Name = "Shadow"
+Shadow_3.Parent = Updates
+Shadow_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow_3.BackgroundTransparency = 1.000
+Shadow_3.Position = UDim2.new(-0.0206376575, 0, -5.79978519e-08, 0)
+Shadow_3.Size = UDim2.new(0.965028524, 24, 0.908777356, 24)
+Shadow_3.ZIndex = -999999999
+Shadow_3.Image = "rbxassetid://405124116"
+Shadow_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow_3.ScaleType = Enum.ScaleType.Slice
+Shadow_3.SliceCenter = Rect.new(12, 12, 115, 115)
+
+TextLabel_17.Parent = Updates
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Position = UDim2.new(0.013245645, 0, 0.0312508196, 0)
+TextLabel_17.Size = UDim2.new(1.00000012, 0, 0.125785992, 0)
+TextLabel_17.Font = Enum.Font.SourceSans
+TextLabel_17.Text = "<u>Updates</u>"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextWrapped = true
+
+ScrollingFrame_3.Parent = Updates
+ScrollingFrame_3.Active = true
+ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_3.BackgroundTransparency = 1.000
+ScrollingFrame_3.Position = UDim2.new(0.0424625315, 0, 0.205251202, 0)
+ScrollingFrame_3.Size = UDim2.new(0.929958165, 0, 0.749137461, 0)
+
+TextLabel_18.Parent = ScrollingFrame_3
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(0.15520525, 0, 0.0369660482, 0)
+TextLabel_18.Size = UDim2.new(0.69910109, 0, 0.0762366951, 0)
+TextLabel_18.Font = Enum.Font.SourceSans
+TextLabel_18.Text = "--5/25/21: Added LoadScreen And WalkSpeed"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+intro.Name = "intro"
+intro.Parent = LoadFold
+intro.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+intro.Position = UDim2.new(0.297218174, 0, 0.328125, 0)
+intro.Size = UDim2.new(0.404164046, 0, 0.342568129, 0)
+
+UICorner_25.CornerRadius = UDim.new(0, 15)
+UICorner_25.Parent = intro
+
+Shadow_4.Name = "Shadow"
+Shadow_4.Parent = intro
+Shadow_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow_4.BackgroundTransparency = 1.000
+Shadow_4.Position = UDim2.new(-0.0206373148, 0, 0, 0)
+Shadow_4.Size = UDim2.new(0.998458028, 24, 0.908777297, 24)
+Shadow_4.ZIndex = -999999999
+Shadow_4.Image = "rbxassetid://405124116"
+Shadow_4.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow_4.ScaleType = Enum.ScaleType.Slice
+Shadow_4.SliceCenter = Rect.new(12, 12, 115, 115)
+
+TextLabel_19.Parent = intro
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.Position = UDim2.new(-5.58793545e-08, 0, 0.0274498761, 0)
+TextLabel_19.Size = UDim2.new(1.00000012, 0, 0.254535437, 0)
+TextLabel_19.Font = Enum.Font.SourceSans
+TextLabel_19.Text = "Yuuki Hub V1"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.TextScaled = true
+TextLabel_19.TextSize = 14.000
+TextLabel_19.TextWrapped = true
+
+TextLabel_20.Parent = intro
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.Position = UDim2.new(-5.52766473e-08, 0, 0.278312385, 0)
+TextLabel_20.Size = UDim2.new(1.00000012, 0, 0.125785992, 0)
+TextLabel_20.Font = Enum.Font.SourceSans
+TextLabel_20.Text = "Successfully Loaded!"
+TextLabel_20.TextColor3 = Color3.fromRGB(97, 97, 97)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextWrapped = true
+
+Load.Name = "Load"
+Load.Parent = intro
+Load.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+Load.Position = UDim2.new(0.249960065, 0, 0.577744067, 0)
+Load.Size = UDim2.new(0.5, 0, 0.234352186, 0)
+Load.Font = Enum.Font.SourceSans
+Load.Text = "Load"
+Load.TextColor3 = Color3.fromRGB(255, 255, 255)
+Load.TextScaled = true
+Load.TextSize = 14.000
+Load.TextWrapped = true
+
+UICorner_26.CornerRadius = UDim.new(0, 15)
+UICorner_26.Parent = Load
+local KillA = Instance.new('BoolValue',AimBot)
+KillA.Name = 'KillAura'
+local LoopKA = Instance.new('BoolValue',AimBot)
+LoopKA.Name = 'LKA'
+local SSA = Instance.new('BoolValue',AimBot)
+SSA.Name = 'SA'
+local norec = Instance.new('BoolValue',AimBot)
+norec.Name = 'NR'
+local automatic = Instance.new('BoolValue',AimBot)
+automatic.Name = 'Auto'
+local ch = Instance.new('BoolValue',Visuals)
+ch.Name = 'Chams'
+-- Scripts:
+
+local function CHTPV_fake_script() -- Scripts.K 
+	local script = Instance.new('LocalScript', Scripts)
+
+	local UIS = game:GetService("UserInputService")
+	local CM = script.Parent.Parent.Checks.Visuals.Chams
+	--Functions
+	function SwitchToKnife()
+		local N = game:GetService("VirtualInputManager")
+		N:SendKeyEvent(true, 51, false, game)
+		N:SendKeyEvent(false, 51, false, game)	
+	end
+	function RandomPlr()
+		tempPlrs = {}
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v and v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Head") and v.Team ~= game.Players.LocalPlayer.Team and v.Character:FindFirstChild("Spawned") then
+				table.insert(tempPlrs,v)
+			end
+		end
+		return tempPlrs[math.random(1,#tempPlrs)]    
+	end
+	function KillAll()
+		local Gun = game.ReplicatedStorage.Weapons:FindFirstChild(game.Players.LocalPlayer.NRPBS.EquippedTool.Value);
+		local Crit = math.random() > .6 and true or false;
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v and v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Head") then
+				for i =1,10 do
+					local Distance = (game.Players.LocalPlayer.Character.Head.Position - v.Character.Head.Position).magnitude 
+					game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head, -- Hit Part
+						v.Character.Head.Position + Vector3.new(math.random(), math.random(), math.random()), -- Hit Position
+						Gun.Name, 
+						Crit and 2 or 1, 
+						Distance,
+						Backstab, 
+						Crit, 
+						false, 
+						1, 
+						false, 
+						Gun.FireRate.Value,
+						Gun.ReloadTime.Value,
+						Gun.Ammo.Value,
+						Gun.StoredAmmo.Value,
+						Gun.Bullets.Value,
+						Gun.EquipTime.Value,
+						Gun.RecoilControl.Value,
+						Gun.Auto.Value,
+						Gun['Speed%'].Value,
+						game.ReplicatedStorage.wkspc.DistributedTime.Value);
+				end 
+			end
+		end
+	end
+	function KnifeKill()
+		OldPos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		local Crit = math.random() > .6 and true or false;
+		Target = RandomPlr()
+		game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(Target.Character.Head.CFrame * CFrame.new(0,2,3))
+		SwitchToKnife()
+		wait(.2)
+		for i =1,20 do
+			SwitchToKnife()
+			wait()
+			local Gun = game.ReplicatedStorage.Weapons:FindFirstChild(game.Players.LocalPlayer.NRPBS.EquippedTool.Value)
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(Target.Character.Head.CFrame * CFrame.new(0,2,3))
+			local Distance = (game.Players.LocalPlayer.Character.Head.Position - Target.Character.Head.Position).magnitude 
+			game.ReplicatedStorage.Events.HitPart:FireServer(Target.Character.Head, -- Hit Part
+				Target.Character.Head.Position + Vector3.new(math.random(), math.random(), math.random()), -- Hit Position
+				Gun.Name, 
+				Crit and 2 or 1, 
+				Distance,
+				true, 
+				Crit, 
+				false, 
+				1, 
+				false, 
+				Gun.FireRate.Value,
+				Gun.ReloadTime.Value,
+				Gun.Ammo.Value,
+				Gun.StoredAmmo.Value,
+				Gun.Bullets.Value,
+				Gun.EquipTime.Value,
+				Gun.RecoilControl.Value,
+				Gun.Auto.Value,
+				Gun['Speed%'].Value,
+				game.ReplicatedStorage.wkspc.DistributedTime.Value);
+		end
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = OldPos
+	end
+	--End Of Functions
+	
+	UIS.InputBegan:Connect(function(input, gameProcessedEvent)
+		if gameProcessedEvent then
+			return
+		end
+		if input.UserInputType == Enum.UserInputType.Keyboard then
+			if input.KeyCode == Enum.KeyCode.E then
+				KillAll()
+			elseif input.KeyCode == Enum.KeyCode.T then
+				KnifeKill()
+			elseif input.KeyCode == Enum.KeyCode.Nine then
+				if CM.Value == true then
+					CM.Value = false
+				else
+					CM.Value = true
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(CHTPV_fake_script)()
+local function ERIINEL_fake_script() -- Scripts.Chams 
+	local script = Instance.new('LocalScript', Scripts)
+
+	local UIS = game:GetService("UserInputService")
+	local CM = script.Parent.Parent.Checks.Visuals.Chams
+	
+	function CreateGui(name,parent,face)
+		local SurfGui = Instance.new('SurfaceGui',parent)
+		SurfGui.Parent = parent
+		SurfGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+		SurfGui.Face = Enum.NormalId[face]
+		SurfGui.LightInfluence = 0
+		SurfGui.ResetOnSpawn = false
+		SurfGui.Name = name
+		SurfGui.AlwaysOnTop = true
+		local Frame = Instance.new('Frame',SurfGui)
+		Frame.BackgroundColor3 = Color3.fromRGB(255, 43, 46)
+		Frame.Size = UDim2.new(1,0,1,0)
+		Frame.BackgroundTransparency = 0.5
+	end
+	function DestroyGui()
+		for i,v in pairs(game.Players:GetPlayers()) do
+			for i,c in pairs(v.Character:GetChildren()) do
+				if c:IsA('MeshPart') or c.Name == 'Head' then
+					if c:FindFirstChild('cham') then
+						for i,m in pairs(c:GetChildren()) do
+							if m.name == 'cham' then
+								m:Destroy()
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+	while wait(1) do
+		if CM.Value == false then
+			DestroyGui()
+		end
+		for i,v in pairs(game:GetService('Players'):GetPlayers()) do
+			if v ~= game.Players.LocalPlayer and v.Character ~= nil and v.Character:FindFirstChild('Head') and CM.Value == true and v.Character.Head:FindFirstChild('cham') == nil and v.Team ~= game.Players.LocalPlayer.Team then
+				for i,v in pairs(v.Character:GetChildren()) do
+					if v:IsA('MeshPart') or v.Name == 'Head' then
+						CreateGui('cham',v,'Back')
+						CreateGui('cham',v,'Front')
+						CreateGui('cham',v,'Top')
+						CreateGui('cham',v,'Bottom')
+						CreateGui('cham',v,'Right')
+						CreateGui('cham',v,'Left')
+					end
+				end
+			end
+		end
+	end
+end
+coroutine.wrap(ERIINEL_fake_script)()
+local function XETKLYT_fake_script() -- Combat.LocalScript 
+	local script = Instance.new('LocalScript', Combat)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CombatFrame.Visible = true
+		script.Parent.Parent.Parent.VisualsFrame.Visible = false
+	end)
+end
+coroutine.wrap(XETKLYT_fake_script)()
+local function VKKJ_fake_script() -- Visuals_2.LocalScript 
+	local script = Instance.new('LocalScript', Visuals_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.CombatFrame.Visible = false
+		script.Parent.Parent.VisualsFrame.Visible = true
+	end)
+end
+coroutine.wrap(VKKJ_fake_script)()
+local function APUYGPC_fake_script() -- MainFunctions.KillAura 
+	local script = Instance.new('LocalScript', MainFunctions)
+
+	--Vars
+	--local KAC = script.Parent.Parent.CombatFrame.ScrollingFrame.KillAura.Check
+	local KAV = script.Parent.Parent.CombatFold.Checks.AimBot.KillAura.Value
+	local KA = script.Parent.Parent.CombatFold.Checks.AimBot.KillAura
+	--End Of Vars
+	
+	--Checks
+	--local Config = {
+	--	Visuals = {
+	--		BoxEsp = false,
+	--		CornerBoxEsp = false,
+	--		TracerEsp = false,
+	--		TracersOrigin = "Top",
+	--		FullBright = false,
+	--		EnemyColor = Color3.fromRGB(190, 190, 0),
+	--		TeamColor = Color3.fromRGB(0, 190, 0),
+	--		GunColor = Color3.fromRGB(0, 190, 0),
+	--		BulletTracersColor = Color3.fromRGB(100, 100, 255),
+	--		ImpactPointsColor = Color3.fromRGB(255, 50, 50),
+	--		GunAndArmsColor = Color3.fromRGB(255, 100, 255),
+	--		AlwaysDay = false,
+	--		BulletTracers = false,
+	--		ImpactPoints = false
+	--	},
+	--	Aimbot = {
+	--		Aimbot = false,
+	--		Smoothness = 0.25,
+	--		AimBone = "head",
+	--		RandomAimBone = false,
+	--		MouseTwoDown = false,
+	--		Silent = false,
+	--		VisCheck = false,
+	--		DrawFOV = false,
+	--		FOV = 200,
+	--		SnapLines = false,
+	--		KillAura = false
+	--	},
+	--	GunMods = {
+	--		Recoil = false,
+	--		Spread = false,
+	--		InstaReload = false,
+	--		FireRate = false,
+	--		FireRateSpeed = 2000,
+	--		RainbowGun = false,
+	--		Sway = false,
+	--		Bob = false,
+	--		CombineMags = false
+	--	},
+	--	OldGunModules = {},
+	--	Player = {
+	--		Walkspeed = 16,
+	--		Jumppower = 4,
+	--		Gravity = 0,
+	--		FallDmg = false,
+	--		AlwaysAllowSpawn = false,
+	--		FreeseCharOnGameEnd = false,
+	--		Team = "nigger"
+	--	}
+	--}
+	--End Of Checks
+	function KillAll()
+		local Gun = game.ReplicatedStorage.Weapons:FindFirstChild(game.Players.LocalPlayer.NRPBS.EquippedTool.Value);
+		local Crit = math.random() > .6 and true or false;
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v and v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Head") then
+				for i =1,10 do
+					local Distance = (game.Players.LocalPlayer.Character.Head.Position - v.Character.Head.Position).magnitude 
+					game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head, -- Hit Part
+						v.Character.Head.Position + Vector3.new(math.random(), math.random(), math.random()), -- Hit Position
+						Gun.Name, 
+						Crit and 2 or 1, 
+						Distance,
+						Backstab, 
+						Crit, 
+						false, 
+						1, 
+						false, 
+						Gun.FireRate.Value,
+						Gun.ReloadTime.Value,
+						Gun.Ammo.Value,
+						Gun.StoredAmmo.Value,
+						Gun.Bullets.Value,
+						Gun.EquipTime.Value,
+						Gun.RecoilControl.Value,
+						Gun.Auto.Value,
+						Gun['Speed%'].Value,
+						game.ReplicatedStorage.wkspc.DistributedTime.Value);
+				end 
+			end
+		end
+	end
+	--Constants
+	--while true do 
+	--	if KAV == true then
+	--		print('Here')
+	--		for i,v in pairs(game.Players:GetPlayers()) do
+	--			if v and v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Head") then    
+	--				local Distance = (game.Players.LocalPlayer.Character.PrimaryPart.Position - v.Character.PrimaryPart.Position).magnitude 
+	--				if Distance <= 12 then
+	--					local Gun = game.ReplicatedStorage.Weapons:FindFirstChild(game.Players.LocalPlayer.NRPBS.EquippedTool.Value);
+	--					local Crit = math.random() > .6 and true or false;
+	--					--game:GetService("ReplicatedStorage").Events.FallDamage:FireServer(1000, v.Character:FindFirstChild("Hitbox"))
+	--					game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head, -- Hit Part
+	--						v.Character.Head.Position + Vector3.new(math.random(), math.random(), math.random()), -- Hit Position
+	--						Gun.Name, 
+	--						Crit and 2 or 1, 
+	--						Distance,
+	--						Backstab, 
+	--						Crit, 
+	--						false, 
+	--						1, 
+	--						false, 
+	--						Gun.FireRate.Value,
+	--						Gun.ReloadTime.Value,
+	--						Gun.Ammo.Value,
+	--						Gun.StoredAmmo.Value,
+	--						Gun.Bullets.Value,
+	--						Gun.EquipTime.Value,
+	--						Gun.RecoilControl.Value,
+	--						Gun.Auto.Value,
+	--						Gun['Speed%'].Value,
+	--						game.ReplicatedStorage.wkspc.DistributedTime.Value);
+	--				end
+	--			end
+	--		end
+	--	end
+	--end
+	KA.Changed:Connect(function(value)
+		while KA.Value == true do wait()
+			print('here')
+			for i,v in pairs(game.Players:GetPlayers()) do
+				if v and v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Head") then    
+					local Distance = (game.Players.LocalPlayer.Character.PrimaryPart.Position - v.Character.PrimaryPart.Position).magnitude 
+					if Distance <= 50 then
+						local Gun = game.ReplicatedStorage.Weapons:FindFirstChild(game.Players.LocalPlayer.NRPBS.EquippedTool.Value);
+						local Crit = math.random() > .6 and true or false;
+						--game:GetService("ReplicatedStorage").Events.FallDamage:FireServer(1000, v.Character:FindFirstChild("Hitbox"))
+						game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head, -- Hit Part
+							v.Character.Head.Position + Vector3.new(math.random(), math.random(), math.random()), -- Hit Position
+							Gun.Name, 
+							Crit and 2 or 1, 
+							Distance,
+							Backstab, 
+							Crit, 
+							false, 
+							1, 
+							false, 
+							Gun.FireRate.Value,
+							Gun.ReloadTime.Value,
+							Gun.Ammo.Value,
+							Gun.StoredAmmo.Value,
+							Gun.Bullets.Value,
+							Gun.EquipTime.Value,
+							Gun.RecoilControl.Value,
+							Gun.Auto.Value,
+							Gun['Speed%'].Value,
+							game.ReplicatedStorage.wkspc.DistributedTime.Value);
+						end
+					end
+				end
+		end
+	end)
+	--End Of Constants
+end
+coroutine.wrap(APUYGPC_fake_script)()
+local function GFCEU_fake_script() -- MainFunctions.LoopKillAll 
+	local script = Instance.new('LocalScript', MainFunctions)
+
+	LKA = script.Parent.Parent.CombatFold.Checks.AimBot.LKA
+	
+	LKA.Changed:Connect(function(value)
+		while LKA.Value == true do wait()
+			print('here')
+			for i,v in pairs(game.Players:GetPlayers()) do
+				if v and v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Head") then    
+					local Distance = (game.Players.LocalPlayer.Character.PrimaryPart.Position - v.Character.PrimaryPart.Position).magnitude 
+					if Distance <= 10000 then
+						local Gun = game.ReplicatedStorage.Weapons:FindFirstChild(game.Players.LocalPlayer.NRPBS.EquippedTool.Value);
+						local Crit = math.random() > .6 and true or false;
+						--game:GetService("ReplicatedStorage").Events.FallDamage:FireServer(1000, v.Character:FindFirstChild("Hitbox"))
+						game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head, -- Hit Part
+							v.Character.Head.Position + Vector3.new(math.random(), math.random(), math.random()), -- Hit Position
+							Gun.Name, 
+							Crit and 2 or 1, 
+							Distance,
+							Backstab, 
+							Crit, 
+							false, 
+							1, 
+							false, 
+							Gun.FireRate.Value,
+							Gun.ReloadTime.Value,
+							Gun.Ammo.Value,
+							Gun.StoredAmmo.Value,
+							Gun.Bullets.Value,
+							Gun.EquipTime.Value,
+							Gun.RecoilControl.Value,
+							Gun.Auto.Value,
+							Gun['Speed%'].Value,
+							game.ReplicatedStorage.wkspc.DistributedTime.Value);
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(GFCEU_fake_script)()
+local function DIAC_fake_script() -- MainFunctions.SilentAim 
+	local script = Instance.new('LocalScript', MainFunctions)
+
+	--> VARIABLES <--
+	local plrs = game:GetService("Players")
+	local plr = plrs.LocalPlayer
+	local mouse = plr:GetMouse()
+	local camera = game:GetService("Workspace").CurrentCamera
+	local SA = script.Parent.Parent.CombatFold.Checks.AimBot.SA
+	
+	--> FUNCTIONS <--
+	--function notBehindWall(target)
+	--	local ray = Ray.new(plr.Character.Head.Position, (target.Position - plr.Character.Head.Position).Unit * 300)
+	--	local part, position = game:GetService("Workspace"):FindPartOnRayWithIgnoreList(ray, {plr.Character}, false, true)
+	--	if part then
+	--		local humanoid = part.Parent:FindFirstChildOfClass("Humanoid")
+	--		if not humanoid then
+	--			humanoid = part.Parent.Parent:FindFirstChildOfClass("Humanoid")
+	--		end
+	--		if humanoid and target and humanoid.Parent == target.Parent then
+	--			local pos, visible = camera:WorldToScreenPoint(target.Position)
+	--			if visible then
+	--				return true
+	--			end
+	--		end
+	--	end
+	--end
+	
+	--function getPlayerClosestToMouse()
+	--	local target = nil
+	--	local maxDist = 170
+	--	for _,v in pairs(plrs:GetPlayers()) do
+	--		if v.Character then
+	--			if v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health ~= 0 and v.Character:FindFirstChild("HumanoidRootPart") and v.TeamColor ~= plr.TeamColor and SA.Value == true then
+	--				local pos, vis = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+	--				local dist = (Vector2.new(mouse.X, mouse.Y) - Vector2.new(pos.X, pos.Y)).magnitude
+	--				if dist < maxDist and vis then
+	--					local torsoPos = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+	--					local torsoDist = (Vector2.new(mouse.X, mouse.Y) - Vector2.new(torsoPos.X, torsoPos.Y)).magnitude
+	--					local headPos = camera:WorldToViewportPoint(v.Character.Head.Position)
+	--					local headDist = (Vector2.new(mouse.X, mouse.Y) - Vector2.new(headPos.X, headPos.Y)).magnitude
+	--					if torsoDist > headDist then
+	--						if notBehindWall(v.Character.Head) then
+	--							target = v.Character.Head
+	--						end
+	--					else
+	--						if notBehindWall(v.Character.HumanoidRootPart) then
+	--							target = v.Character.HumanoidRootPart
+	--						end
+	--					end
+	--					maxDist = dist
+	--				end
+	--			end
+	--		end
+	--	end
+	--	return target
+	--end
+	
+	--> Hooking to the remote <--
+	--local gmt = getrawmetatable(game)
+	--setreadonly(gmt, false)
+	--local oldNamecall = gmt.__namecall
+	
+	--while true do wait()
+	--	if SA.Value == true then
+	--		gmt.__namecall = newcclosure(function(self, ...)
+	--			local Args = {...}
+	--			local method = getnamecallmethod()
+	--			if tostring(self) == "HitPart" and tostring(method) == "FireServer" then
+	--				Args[1] = getPlayerClosestToMouse()
+	--				Args[2] = getPlayerClosestToMouse().Position
+	--				return self.FireServer(self, unpack(Args))
+	--			end
+	--			return oldNamecall(self, ...)
+	--		end)
+	--	end
+	--end
+end
+coroutine.wrap(DIAC_fake_script)()
+local function DLTLNZ_fake_script() -- MainFunctions.Gun Mods 
+	local script = Instance.new('LocalScript', MainFunctions)
+
+	local NR = script.Parent.Parent.CombatFold.Checks.AimBot.NR
+	local Auto = script.Parent.Parent.CombatFold.Checks.AimBot.Auto
+	
+	local func;
+	for i,v in next, getgc(true) do
+		if typeof(v) == "table" and rawget(v, 'countammo') then
+			func = v
+		end
+	end
+	
+	local mt = getrawmetatable(game);
+	setreadonly(mt,false)
+	local newindex = mt.__newindex
+	
+	mt.__newindex = newcclosure(function(Instance, Property, Value)
+		if tostring(Instance) == 'Clip' and Instance:IsA('TextLabel') and tostring(Instance.Parent) == 'Ammo' then
+			if Property == 'Text' then
+				--if shared.infammo then
+				--	func.ammocount = 999
+				--end
+				if NR.Value == true then
+					func.recoil = 0
+					func.spreadmodifier = 0
+					func.currentspread = 0 
+				end
+				if Auto.Value == true then
+					func.mode = 'automatic'
+				end
+			end
+		end
+	
+		return newindex(Instance, Property, Value)
+	end)
+end
+coroutine.wrap(DLTLNZ_fake_script)()
+local function XOPSUA_fake_script() -- Slider.Handler 
+	local script = Instance.new('LocalScript', Slider)
+
+	local Slider = script.Parent
+	local SliderBtn = Slider.Button
+	local Player = game:GetService("Players").LocalPlayer
+	local UIS = game:GetService("UserInputService")
+	local RuS = game:GetService("RunService")
+		
+	
+	-- propertiez
+	local held = false
+	
+	UIS.InputEnded:connect(function(input, processed)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			held = false
+		end
+	end)
+	
+	SliderBtn.MouseButton1Down:connect(function()
+		held = true
+	end)
+	
+	RuS.RenderStepped:connect(function(delta)
+		if held then
+			local MousePos = UIS:GetMouseLocation()
+			local Pos = MousePos - Slider.AbsolutePosition
+			local BtnPos =  SliderBtn.Position
+			wait(0.1)
+			SliderBtn.Position = UDim2.new(0,math.clamp(Pos.X,0,Slider.AbsoluteSize.X), BtnPos.Y.Scale, BtnPos.Y.Offset)
+		end
+	end)
+end
+coroutine.wrap(XOPSUA_fake_script)()
+local function YLSD_fake_script() -- FPS.LocalScript 
+	local script = Instance.new('LocalScript', FPS)
+
+	--while true do
+	--wait()
+	--FPS = wait()
+	--script.Parent.Text = "FPS: "..math.floor(1 / FPS)
+	--wait()
+	--end
+	
+	
+	local FPS = script.Parent
+	local RS = game:GetService('RunService')
+	
+	RS.RenderStepped:Connect(function()
+		local FPSCount = game.Workspace:GetRealPhysicsFPS()
+		FPS.Text = 'FPS '..FPSCount
+		wait(1)
+	end)
+end
+coroutine.wrap(YLSD_fake_script)()
+local function CSMKVZT_fake_script() -- Invite_Friend.LocalScript 
+	local script = Instance.new('LocalScript', Invite_Friend)
+
+	local button = script.Parent
+	local SocialService = game:GetService("SocialService")
+	local player = game.Players.LocalPlayer
+	
+	function onButtonPressed()
+		local Success, result = pcall(
+		    function()
+			    return SocialService:CanSendGameInviteAsync(player)
+			end
+			
+		)
+		
+	    if result == true then
+		    SocialService:PromptGameInvite(player)
+	    end
+	end
+	
+	button.MouseButton1Click:Connect(onButtonPressed)
+	button.TouchTap:Connect(onButtonPressed)
+end
+coroutine.wrap(CSMKVZT_fake_script)()
+local function SANFDW_fake_script() -- Chams.LocalScript 
+	local script = Instance.new('LocalScript', Chams)
+
+	script.Parent.MouseEnter:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+end
+coroutine.wrap(SANFDW_fake_script)()
+local function HRLHS_fake_script() -- plrName.plrName 
+	local script = Instance.new('LocalScript', plrName)
+
+	script.Parent.Text = game.Players.LocalPlayer.Name
+end
+coroutine.wrap(HRLHS_fake_script)()
+local function QKGEZWI_fake_script() -- KA.LocalScript 
+	local script = Instance.new('LocalScript', KA)
+
+	script.Parent.MouseEnter:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+end
+coroutine.wrap(QKGEZWI_fake_script)()
+local function RAFLOJN_fake_script() -- KnifeAll.LocalScript 
+	local script = Instance.new('LocalScript', KnifeAll)
+
+	script.Parent.MouseEnter:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+end
+coroutine.wrap(RAFLOJN_fake_script)()
+local function NRPS_fake_script() -- KillAura.LocalScript 
+	local script = Instance.new('LocalScript', KillAura)
+
+	script.Parent.MouseEnter:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+end
+coroutine.wrap(NRPS_fake_script)()
+local function XPHMUMU_fake_script() -- Check.LocalScript 
+	local script = Instance.new('LocalScript', Check)
+
+	local KAC = script.Parent
+	KAC.MouseButton1Click:Connect(function()
+		if KAC.BackgroundColor3 == Color3.new(1, 0, 0) then
+			--local TweenService = game:GetService("TweenService")
+			--local but = KAC
+			--local TweeningInformation = TweenInfo.new(
+			--	0.5,
+			--	Enum.EasingStyle.Quad,
+			--	Enum.EasingDirection.Out,
+			--	1,
+			--	true,
+			--	0
+			--)
+	
+			--local PartProperties = {
+			--	BackgroundColor3 = Color3.new(0, 1, 0)
+			--}
+	
+			--local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+			--Tween:Play()
+			--wait(0.5)
+			--Tween:Pause()
+			KAC.BackgroundColor3 = Color3.new(0, 1, 0)
+			script.Parent.Parent.Parent.Parent.Parent.CombatFold.Checks.AimBot.KillAura.Value = true
+		elseif KAC.BackgroundColor3 == Color3.new(0, 1, 0) then
+			--local TweenService = game:GetService("TweenService")
+			--local but = KAC
+			--local TweeningInformation = TweenInfo.new(
+			--	0.5,
+			--	Enum.EasingStyle.Quad,
+			--	Enum.EasingDirection.Out,
+			--	1,
+			--	true,
+			--	0
+			--)
+	
+			--local PartProperties = {
+			--	BackgroundColor3 = Color3.new(1, 0, 0)
+			--}
+	
+			--local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+			--Tween:Play()
+			--wait(0.5)
+			--Tween:Pause()
+			KAC.BackgroundColor3 = Color3.new(1, 0, 0)
+			script.Parent.Parent.Parent.Parent.Parent.CombatFold.Checks.AimBot.KillAura.Value = false
+		end
+	end) 
+end
+coroutine.wrap(XPHMUMU_fake_script)()
+local function KCXKZ_fake_script() -- LoopKillAll.LocalScript 
+	local script = Instance.new('LocalScript', LoopKillAll)
+
+	script.Parent.MouseEnter:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+end
+coroutine.wrap(KCXKZ_fake_script)()
+local function PZWBTTL_fake_script() -- Check_2.LocalScript 
+	local script = Instance.new('LocalScript', Check_2)
+
+	local KAC = script.Parent
+	KAC.MouseButton1Click:Connect(function()
+		if KAC.BackgroundColor3 == Color3.new(1, 0, 0) then
+			--local TweenService = game:GetService("TweenService")
+			--local but = KAC
+			--local TweeningInformation = TweenInfo.new(
+			--	0.5,
+			--	Enum.EasingStyle.Quad,
+			--	Enum.EasingDirection.Out,
+			--	1,
+			--	true,
+			--	0
+			--)
+	
+			--local PartProperties = {
+			--	BackgroundColor3 = Color3.new(0, 1, 0)
+			--}
+	
+			--local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+			--Tween:Play()
+			--wait(0.5)
+			--Tween:Pause()
+			KAC.BackgroundColor3 = Color3.new(0, 1, 0)
+			script.Parent.Parent.Parent.Parent.Parent.CombatFold.Checks.AimBot.LKA.Value = true
+		elseif KAC.BackgroundColor3 == Color3.new(0, 1, 0) then
+			--local TweenService = game:GetService("TweenService")
+			--local but = KAC
+			--local TweeningInformation = TweenInfo.new(
+			--	0.5,
+			--	Enum.EasingStyle.Quad,
+			--	Enum.EasingDirection.Out,
+			--	1,
+			--	true,
+			--	0
+			--)
+	
+			--local PartProperties = {
+			--	BackgroundColor3 = Color3.new(1, 0, 0)
+			--}
+	
+			--local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+			--Tween:Play()
+			--wait(0.5)
+			--Tween:Pause()
+			KAC.BackgroundColor3 = Color3.new(1, 0, 0)
+			script.Parent.Parent.Parent.Parent.Parent.CombatFold.Checks.AimBot.LKA.Value = false
+		end
+	end) 
+end
+coroutine.wrap(PZWBTTL_fake_script)()
+local function AZQY_fake_script() -- SilentAim.LocalScript 
+	local script = Instance.new('LocalScript', SilentAim)
+
+	script.Parent.MouseEnter:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+end
+coroutine.wrap(AZQY_fake_script)()
+local function AOBZBFJ_fake_script() -- Check_3.LocalScript 
+	local script = Instance.new('LocalScript', Check_3)
+
+	local KAC = script.Parent
+	KAC.MouseButton1Click:Connect(function()
+		if KAC.BackgroundColor3 == Color3.new(1, 0, 0) then
+			--local TweenService = game:GetService("TweenService")
+			--local but = KAC
+			--local TweeningInformation = TweenInfo.new(
+			--	0.5,
+			--	Enum.EasingStyle.Quad,
+			--	Enum.EasingDirection.Out,
+			--	1,
+			--	true,
+			--	0
+			--)
+	
+			--local PartProperties = {
+			--	BackgroundColor3 = Color3.new(0, 1, 0)
+			--}
+	
+			--local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+			--Tween:Play()
+			--wait(0.5)
+			--Tween:Pause()
+			KAC.BackgroundColor3 = Color3.new(0, 1, 0)
+			script.Parent.Parent.Parent.Parent.Parent.CombatFold.Checks.AimBot.SA.Value = true
+		elseif KAC.BackgroundColor3 == Color3.new(0, 1, 0) then
+			--local TweenService = game:GetService("TweenService")
+			--local but = KAC
+			--local TweeningInformation = TweenInfo.new(
+			--	0.5,
+			--	Enum.EasingStyle.Quad,
+			--	Enum.EasingDirection.Out,
+			--	1,
+			--	true,
+			--	0
+			--)
+	
+			--local PartProperties = {
+			--	BackgroundColor3 = Color3.new(1, 0, 0)
+			--}
+	
+			--local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+			--Tween:Play()
+			--wait(0.5)
+			--Tween:Pause()
+			KAC.BackgroundColor3 = Color3.new(1, 0, 0)
+			script.Parent.Parent.Parent.Parent.Parent.CombatFold.Checks.AimBot.SA.Value = false
+		end
+	end) 
+end
+coroutine.wrap(AOBZBFJ_fake_script)()
+local function XSKAVQ_fake_script() -- NoRecoil.LocalScript 
+	local script = Instance.new('LocalScript', NoRecoil)
+
+	script.Parent.MouseEnter:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+end
+coroutine.wrap(XSKAVQ_fake_script)()
+local function RRIT_fake_script() -- Check_4.LocalScript 
+	local script = Instance.new('LocalScript', Check_4)
+
+	local KAC = script.Parent
+	KAC.MouseButton1Click:Connect(function()
+		if KAC.BackgroundColor3 == Color3.new(1, 0, 0) then
+			--local TweenService = game:GetService("TweenService")
+			--local but = KAC
+			--local TweeningInformation = TweenInfo.new(
+			--	0.5,
+			--	Enum.EasingStyle.Quad,
+			--	Enum.EasingDirection.Out,
+			--	1,
+			--	true,
+			--	0
+			--)
+	
+			--local PartProperties = {
+			--	BackgroundColor3 = Color3.new(0, 1, 0)
+			--}
+	
+			--local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+			--Tween:Play()
+			--wait(0.5)
+			--Tween:Pause()
+			KAC.BackgroundColor3 = Color3.new(0, 1, 0)
+			script.Parent.Parent.Parent.Parent.Parent.CombatFold.Checks.AimBot.NR.Value = true
+		elseif KAC.BackgroundColor3 == Color3.new(0, 1, 0) then
+			--local TweenService = game:GetService("TweenService")
+			--local but = KAC
+			--local TweeningInformation = TweenInfo.new(
+			--	0.5,
+			--	Enum.EasingStyle.Quad,
+			--	Enum.EasingDirection.Out,
+			--	1,
+			--	true,
+			--	0
+			--)
+	
+			--local PartProperties = {
+			--	BackgroundColor3 = Color3.new(1, 0, 0)
+			--}
+	
+			--local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+			--Tween:Play()
+			--wait(0.5)
+			--Tween:Pause()
+			KAC.BackgroundColor3 = Color3.new(1, 0, 0)
+			script.Parent.Parent.Parent.Parent.Parent.CombatFold.Checks.AimBot.NR.Value = false
+		end
+	end) 
+end
+coroutine.wrap(RRIT_fake_script)()
+local function YESAPX_fake_script() -- Automatic.LocalScript 
+	local script = Instance.new('LocalScript', Automatic)
+
+	script.Parent.MouseEnter:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local but = script.Parent
+		local TweeningInformation = TweenInfo.new(
+			0.5,
+			Enum.EasingStyle.Quad,
+			Enum.EasingDirection.Out,
+			753475938457843579348573,
+			true,
+			0
+		)
+	
+		local PartProperties = {
+			BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+		}
+	
+		local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+		Tween:Play()
+		wait(0.5)
+		Tween:Pause()
+	end)
+end
+coroutine.wrap(YESAPX_fake_script)()
+local function LIGBBN_fake_script() -- Check_5.LocalScript 
+	local script = Instance.new('LocalScript', Check_5)
+
+	local KAC = script.Parent
+	KAC.MouseButton1Click:Connect(function()
+		if KAC.BackgroundColor3 == Color3.new(1, 0, 0) then
+			--local TweenService = game:GetService("TweenService")
+			--local but = KAC
+			--local TweeningInformation = TweenInfo.new(
+			--	0.5,
+			--	Enum.EasingStyle.Quad,
+			--	Enum.EasingDirection.Out,
+			--	1,
+			--	true,
+			--	0
+			--)
+	
+			--local PartProperties = {
+			--	BackgroundColor3 = Color3.new(0, 1, 0)
+			--}
+	
+			--local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+			--Tween:Play()
+			--wait(0.5)
+			--Tween:Pause()
+			KAC.BackgroundColor3 = Color3.new(0, 1, 0)
+			script.Parent.Parent.Parent.Parent.Parent.CombatFold.Checks.AimBot.Auto.Value = true
+		elseif KAC.BackgroundColor3 == Color3.new(0, 1, 0) then
+			--local TweenService = game:GetService("TweenService")
+			--local but = KAC
+			--local TweeningInformation = TweenInfo.new(
+			--	0.5,
+			--	Enum.EasingStyle.Quad,
+			--	Enum.EasingDirection.Out,
+			--	1,
+			--	true,
+			--	0
+			--)
+	
+			--local PartProperties = {
+			--	BackgroundColor3 = Color3.new(1, 0, 0)
+			--}
+	
+			--local Tween = TweenService:Create(but,TweeningInformation,PartProperties)
+			--Tween:Play()
+			--wait(0.5)
+			--Tween:Pause()
+			KAC.BackgroundColor3 = Color3.new(1, 0, 0)
+			script.Parent.Parent.Parent.Parent.Parent.CombatFold.Checks.AimBot.Auto.Value = false
+		end
+	end) 
+end
+coroutine.wrap(LIGBBN_fake_script)()
+local function UJQAFD_fake_script() -- main.switchhandler 
+	local script = Instance.new('LocalScript', main)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local switchthing = script.Parent.menu:WaitForChild("switchthing")
+	local Circle = switchthing:WaitForChild("Circle")
+	local Mini = Circle:WaitForChild("Mini")
+	
+	local Button = switchthing:WaitForChild("Button")
+	
+	local function setToggle(request)
+		local Duration = 0.25
+		local Style = Enum.EasingStyle.Sine
+		local Direction = Enum.EasingDirection.Out
+		local RepeatCount = 0
+		local Reverse = false
+		local TweenDelay = 0.2
+		local AnimateInfo = TweenInfo.new(Duration, Style, Direction, RepeatCount, Reverse, TweenDelay)
+		
+		if request == true then
+			local switchthing_Open = TweenService:Create(switchthing, AnimateInfo, {BackgroundColor3 = Color3.new(0, 0.847059, 0.337255)})
+			local Circle_Open = TweenService:Create(Circle, AnimateInfo, {Position = UDim2.new(1, 0, 0.5, 0), AnchorPoint = Vector2.new(1, 0.5)})
+			local Mini_Open = TweenService:Create(Mini, AnimateInfo, {BackgroundColor3 = Color3.new(1, 1, 1)})
+			
+			switchthing_Open:Play()
+			Circle_Open:Play()
+			Mini_Open:Play()
+		elseif request == false then
+			local switchthing_Close = TweenService:Create(switchthing, AnimateInfo, {BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)})
+			local Circle_Close = TweenService:Create(Circle, AnimateInfo, {Position = UDim2.new(0, 0, 0.5, 0), AnchorPoint = Vector2.new(0, 0.5)})
+			local Mini_Close = TweenService:Create(Mini, AnimateInfo, {BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)})
+			
+			switchthing_Close:Play()
+			Circle_Close:Play()
+			Mini_Close:Play()
+		else
+			warn("Wrong request.")
+		end
+	end
+	
+	
+	local Cooldown = false
+	local isOpen = false
+	Button.MouseButton1Click:Connect(function()
+		if not Cooldown then
+			Cooldown = true
+			
+			if not isOpen then
+				setToggle(true)
+				-- Logic here
+				
+				isOpen = true
+			else
+				setToggle(false)
+				--Logic here
+				
+				isOpen = false
+			end
+			
+			
+			wait(0.6) -- Wait n Seconds till the animation will proceed
+			Cooldown = false
+		end
+	end)
+end
+coroutine.wrap(UJQAFD_fake_script)()
+local function NSACL_fake_script() -- main.LocalScript 
+	local script = Instance.new('LocalScript', main)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0.25
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(NSACL_fake_script)()
+local function JQVR_fake_script() -- Bar.Dragify 
+	local script = Instance.new('LocalScript', Bar)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    local dragToggle = nil
+	    local dragSpeed = 0
+	    local dragInput = nil
+	    local dragStart = nil
+	    local dragPos = nil
+	    local function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.05), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(JQVR_fake_script)()
+local function UGEQQQ_fake_script() -- intro.LocalScript 
+	local script = Instance.new('LocalScript', intro)
+
+	local intro = script.Parent
+	script.Parent.Load.MouseButton1Click:Connect(function()
+		for i,v in pairs(intro.Parent:GetChildren()) do
+			if v:IsA('Frame') then
+				v.Visible = false
+			end
+		end
+		intro.Parent.Parent.Bar.Visible = true
+	end)
+end
+coroutine.wrap(UGEQQQ_fake_script)()
